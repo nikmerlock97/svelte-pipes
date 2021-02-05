@@ -1,0 +1,53 @@
+{
+  "name": "ts-pipes",
+  "version": "0.1.45",
+  "main": "dist/ts-pipes.cjs.js",
+  "module": "dist/ts-pipes.esm.js",
+  "browser": "dist/ts-pipes.umd.js",
+  "dependencies": {
+    "ms": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0"
+  },
+  "devDependencies": {
+    "@types/ms": "^0.7.30",
+    "rollup": "^1.32.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "ts-node": "^7.0.1",
+    "tslib": "^2.1.0",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "rollup -c && tsc",
+    "dev": "rollup -c -w",
+    "test": "ts-node test/test.ts",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "Pipe transformation utility functions for TypeScript/JavaScript inspired by Angular Pipes and ngx-pipes",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikmerlock97/ts-pipes.git"
+  },
+  "keywords": [
+    "utility",
+    "pipes",
+    "svelte",
+    "transform",
+    "conversion",
+    "angular"
+  ],
+  "author": "nikmerlock",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/nikmerlock97/ts-pipes/issues"
+  },
+  "homepage": "https://github.com/nikmerlock97/ts-pipes#readme"
+}
